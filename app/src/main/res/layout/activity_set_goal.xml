@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".setGoal">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setGoal">
+
+    <TableLayout
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/group1"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_32ssp"
+        android:text="What’s your\nGoal?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/style1">
+
+
+
+            <CheckBox
+                android:id="@+id/radioLoseWeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="   Lose Weight"
+                android:textSize="@dimen/_20ssp" />
+
+            <CheckBox
+                android:id="@+id/RadioGainMuscules"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Gain Muscules"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_20ssp" />
+
+            <CheckBox
+                android:id="@+id/RadioEatHealther"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Eat Healther"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_20ssp" />
+
+            <CheckBox
+                android:id="@+id/RadioLiveBetter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="   Live Better"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_20ssp" />
+            <CheckBox
+                android:id="@+id/RadioBeSuccessfull"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Be Successfull"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_20ssp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/dot_active"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/dot_active"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toEndOf="@id/l1" />
+
+        <LinearLayout
+            android:layout_toEndOf="@id/l2"
+            android:id="@+id/l3"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/dot_active"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@id/l3"
+            android:id="@+id/l4"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/dot_active"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_toEndOf="@id/l4"
+            android:id="@+id/l6"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/dot_active"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp" />
+
+        <android.widget.Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l3"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/buttone_style"
+            android:text="next"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView
+    android:fitsSystemWindows="false"
+    android:background="@drawable/gradiant"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slider" >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/gradiant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:background="@drawable/style2"
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="HMS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_45sdp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv3"
+            android:layout_toEndOf="@id/tv1"
+            android:gravity="bottom"
+            android:text="همس "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_45sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_340sdp"
+            android:layout_toEndOf="@id/tv2"
+            android:src="@drawable/group11" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="A  W H I S P E R  O F  C A R E"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <TableRow
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="GET STARTED"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_215sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:src="@drawable/group1" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradiant"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+<LinearLayout
+    android:id="@+id/laymain"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradiant"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:background="@drawable/style2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_390sdp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:text="HMS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_45sdp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv3"
+            android:layout_toEndOf="@id/tv1"
+            android:gravity="bottom"
+            android:text="همس "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_45sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:layout_marginBottom="@dimen/_147sdp"
+            android:layout_toEndOf="@id/tv2"
+            android:src="@drawable/group11" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:text="A  W H I S P E R  O F  C A R E"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+    </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/group1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"/>
+
+
+</LinearLayout>
+    </ScrollView>

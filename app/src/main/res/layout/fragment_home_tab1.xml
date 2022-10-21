@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_tab1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0178B8"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0178B8"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:background="@drawable/tab1">
+
+            <TextView
+                android:id="@+id/dashboard"
+                android:text="DASHBOARD"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bs"
+                    android:layout_below="@id/dashboard"
+                    android:text=" "
+                    android:textSize="@dimen/_2ssp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/greetingText"
+                    android:layout_below="@id/bs"
+                    android:text="GOOD MORNING"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_below="@id/bs"
+                    android:layout_toEndOf="@id/greetingText"
+                    android:text=" Pragnesh"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/lLayout"
+                android:layout_below="@id/greetingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_85sdp"
+                    android:id="@+id/steps_image"
+                    android:src="@drawable/steps"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_40sdp" />
+
+                <TextView
+                    android:gravity="top"
+                    android:layout_toEndOf="@id/steps_image"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:id="@+id/step_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_30sdp"
+                    android:text="  2213"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_below="@id/step_count"
+                    android:textSize="@dimen/_15sdp"
+                    android:text="3112 still need - 4245 steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_below="@id/lLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:id="@+id/graph" />
+
+
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_below="@id/graph"
+                        android:layout_marginTop="@dimen/_33sdp"
+                        android:id="@+id/cal"
+                        android:src="@drawable/calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:id="@+id/calories"
+                        android:text="   Calories"
+                        android:layout_toEndOf="@+id/cal"
+                        android:layout_below="@id/graph"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:text="112"
+                            android:id="@+id/caltv"
+                            android:layout_below="@+id/cal"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_30ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/kcpl"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="   kcpl"
+                            android:gravity="bottom"
+                            android:layout_below="@+id/cal"
+                            android:layout_toEndOf="@+id/caltv"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_35sdp"/>
+
+
+
+
+                        <ImageView
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:id="@+id/slp"
+                            android:layout_toEndOf="@+id/calories"
+                            android:layout_marginTop="@dimen/_30ssp"
+                            android:layout_marginLeft="@dimen/_70sdp"
+                            android:layout_below="@id/graph"
+                            android:src="@drawable/sleep"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_toEndOf="@+id/slp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_below="@id/graph"
+                            android:id="@+id/sleep"
+                            android:text="   Sleep"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="7.2"
+                    android:layout_toEndOf="@+id/kcpl"
+                    android:id="@+id/slptv"
+                    android:layout_below="@+id/cal"
+                    android:layout_marginLeft="@dimen/_70sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_30ssp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/h"
+                    android:text="  h"
+                    android:layout_below="@+id/cal"
+                    android:layout_toEndOf="@+id/slptv"
+                    android:textSize="@dimen/_23ssp"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40ssp"/>
+
+            </RelativeLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:padding="@dimen/_8sdp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/home_btn">
+
+                        <TextView
+                            android:paddingTop="@dimen/_5sdp"
+                            android:id="@+id/dashboard1"
+                            android:text="&#129728; Heart Rate"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="#0178B8"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:id="@+id/greetingText1"
+                            android:layout_below="@id/dashboard1"
+                            android:text="86"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_25ssp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:paddingTop="@dimen/_15sdp"
+                            android:id="@+id/greetingTextt1"
+                            android:layout_toEndOf="@id/greetingText1"
+                            android:layout_below="@id/dashboard1"
+                            android:text=" BPM"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_15ssp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </TableRow>
+
+                <TableRow
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/home_btn">
+
+                        <ImageView
+                            android:id="@+id/blood"
+                            android:src="@drawable/blood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"/>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:id="@+id/dashboard2"
+                            android:layout_toEndOf="@id/blood"
+                            android:text="Blood Pressure"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="#0178B8"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:id="@+id/greetingText2"
+                            android:layout_below="@id/dashboard2"
+                            android:text="141/190"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_25ssp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_btn"
+                        android:padding="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/o2"
+                            android:src="@drawable/o2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"/>
+
+                        <TextView
+                            android:layout_toEndOf="@id/o2"
+                            android:id="@+id/dashboard3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Oxygen"
+                            android:textColor="#0178B8"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/greetingText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dashboard3"
+                            android:padding="@dimen/_5sdp"
+                            android:text="90/60"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_25ssp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_toEndOf="@id/greetingText3"
+                            android:id="@+id/greetingTextt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dashboard3"
+                            android:paddingTop="@dimen/_15sdp"
+                            android:text="SPo2"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+                </TableRow>
+
+
+
+                <TableRow
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/home_btn">
+
+                        <ImageView
+                            android:id="@+id/weight1"
+                            android:src="@drawable/weight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"/>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:id="@+id/dashboard4"
+                            android:layout_toEndOf="@id/weight1"
+                            android:text="Weight"
+                            android:textSize="@dimen/_14ssp"
+                            android:textColor="#0178B8"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:padding="@dimen/_5sdp"
+                            android:id="@+id/greetingText4"
+                            android:layout_below="@id/dashboard4"
+                            android:text="72"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_25ssp"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_toEndOf="@id/greetingText4"
+                            android:id="@+id/greetingTextt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dashboard4"
+                            android:paddingTop="@dimen/_15sdp"
+                            android:text="KG"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15ssp"
+                            android:textStyle="bold"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_btn"
+                        android:padding="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/temp"
+                            android:src="@drawable/temp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_30sdp"/>
+
+                        <TextView
+                            android:layout_toEndOf="@id/temp"
+                            android:id="@+id/dashboard5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Temperature"
+                            android:textColor="#0178B8"
+                            android:textSize="@dimen/_14ssp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/greetingText5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dashboard5"
+                            android:padding="@dimen/_5sdp"
+                            android:text="38.1 &#176;C"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_25ssp" />
+
+                    </RelativeLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

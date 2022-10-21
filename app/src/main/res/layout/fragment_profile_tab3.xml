@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/tab2"
+    tools:context=".profile_tab3">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/protv"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="PROFILE" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:id="@+id/uname"
+            android:text="PRAGNESH KOLI"
+            android:textSize="@dimen/_25ssp"
+            android:layout_below="@id/protv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_below="@id/uname"
+            android:textSize="@dimen/_15ssp"
+            android:text="Male, 20 Years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_below="@id/gender"
+            android:layout_toEndOf="@id/run"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man"
+            android:id="@+id/image_man_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/style110"
+            android:id="@+id/run"
+            android:layout_below="@id/gender"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/run"/>
+
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_below="@id/gender"
+            android:layout_toEndOf="@id/run"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:text="Steps"
+            android:id="@+id/stepstv"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_below="@id/stepstv"
+            android:layout_toEndOf="@id/run"
+            android:text="3112"
+            android:textSize="@dimen/_15ssp"
+            android:id="@+id/stepsint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/style110"
+            android:id="@+id/fire"
+            android:layout_below="@id/run"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/fireprofile"/>
+
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_below="@id/stepsint"
+            android:layout_toEndOf="@id/fire"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:text="Steps"
+            android:id="@+id/caleroistv"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_below="@id/caleroistv"
+            android:layout_toEndOf="@id/fire"
+            android:text="112"
+            android:textSize="@dimen/_15ssp"
+            android:id="@+id/caloriesint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_below="@id/caleroistv"
+            android:layout_toEndOf="@id/caloriesint"
+            android:text="kpl"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/kcpltv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"/>
+
+
+        <ImageButton
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/style110"
+            android:id="@+id/timerprofile"
+            android:layout_below="@id/fire"
+            android:scaleType="centerInside"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/timeprofile"/>
+
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_below="@id/caloriesint"
+            android:layout_toEndOf="@id/timerprofile"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="Workout"
+            android:id="@+id/workouttv"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_below="@id/workouttv"
+            android:layout_toEndOf="@id/timerprofile"
+            android:text="2h 30m"
+            android:id="@+id/workouttime"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</FrameLayout>

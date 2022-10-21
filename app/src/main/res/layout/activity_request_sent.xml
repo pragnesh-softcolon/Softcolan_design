@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradiant"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".requestSent">
+<LinearLayout
+    android:fitsSystemWindows="true"
+    android:background="@drawable/gradiant"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/style2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:text="HMS"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv3"
+            android:layout_toEndOf="@id/tv1"
+            android:gravity="bottom"
+            android:text="همس "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_350sdp"
+            android:layout_toEndOf="@id/tv2"
+            android:src="@drawable/group11" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:text="A  W H I S P E R  O F  C A R E"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+        <TextView
+            android:id="@+id/request_sent__tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Request Sent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/request_info_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/request_sent__tv1"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="You request has been successfully submitted. Please check associate email address."
+            android:textSize="@dimen/_13sdp" />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/back_login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="Back to Login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_19sdp" />
+
+        <TextView
+            android:id="@+id/go_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back_login_tv"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="SIGN IN"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_toEndOf="@+id/back_login_tv"
+            android:layout_weight="1"
+            android:src="@drawable/group1" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+    </ScrollView>

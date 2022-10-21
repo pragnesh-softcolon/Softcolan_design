@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/tab2"
+    android:layout_height="match_parent"
+    tools:context=".training_tab2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/dashboard"
+        android:text="TRAINING"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/bs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashboard"
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_5ssp" />
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_below="@id/bs"
+        android:text="Popular workout for you"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/greetingText"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/categoryTv"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Workout Category"
+            android:textSize="@dimen/_15ssp"
+            android:layout_below="@id/recyclerView"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TableLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/categoryTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_marginBottom="@dimen/_9sdp">
+                    <ImageView
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:id="@+id/img2"
+                        android:adjustViewBounds="true"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/p4" />
+
+                    <ImageView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:id="@+id/img"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/p3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="@dimen/_9sdp">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:id="@+id/img3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/p1" />
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:id="@+id/im4"
+                    android:adjustViewBounds="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/p2" />
+
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
