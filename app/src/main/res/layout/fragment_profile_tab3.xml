@@ -2,169 +2,300 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
     android:background="@drawable/tab2"
     tools:context=".profile_tab3">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
-        android:layout_margin="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/protv"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/_15ssp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:text="PROFILE" />
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:id="@+id/protv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
 
         <TextView
-            android:layout_marginTop="@dimen/_20sdp"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:id="@+id/uname"
-            android:text="PRAGNESH KOLI"
-            android:textSize="@dimen/_25ssp"
-            android:layout_below="@id/protv"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/protv"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="PRAGNESH KOLI"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/gender"
-            android:layout_below="@id/uname"
-            android:textSize="@dimen/_15ssp"
-            android:text="Male, 20 Years"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@id/uname"
+            android:text="Male, 20 Years"
+            android:textSize="@dimen/_15ssp" />
+
 
         <ImageView
-            android:layout_below="@id/gender"
-            android:layout_toEndOf="@id/run"
-            android:scaleType="centerCrop"
-            android:src="@drawable/man"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/circle"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:id="@+id/image_circle"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/_240sdp"
+            android:layout_below="@id/uname"
+            android:layout_toEndOf="@id/caloriesint" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
             android:id="@+id/image_man_female"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="@dimen/_290sdp"
+            android:src="@drawable/man"
+            android:layout_below="@id/uname"
+            android:layout_toEndOf="@id/kcpltv" />
 
+        <LinearLayout
+            android:layout_below="@id/image_man_female"
+            android:id="@+id/line"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/blue"
+            android:orientation="horizontal" />
         <ImageButton
-            android:layout_marginTop="@dimen/_20sdp"
-            android:padding="@dimen/_8sdp"
-            android:background="@drawable/style110"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:id="@+id/run"
-            android:layout_below="@id/gender"
-            android:scaleType="centerInside"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/run"/>
-
-        <TextView
-            android:paddingLeft="@dimen/_10sdp"
             android:layout_below="@id/gender"
-            android:layout_toEndOf="@id/run"
-            android:layout_marginTop="@dimen/_22sdp"
-            android:text="Steps"
-            android:id="@+id/stepstv"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/style110"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/run" />
 
         <TextView
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:paddingLeft="@dimen/_10sdp"
-            android:layout_below="@id/stepstv"
+            android:id="@+id/stepstv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_marginTop="@dimen/_22sdp"
             android:layout_toEndOf="@id/run"
-            android:text="3112"
-            android:textSize="@dimen/_15ssp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Steps"
+            android:textColor="@color/black" />
+
+        <TextView
             android:id="@+id/stepsint"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stepstv"
+            android:layout_toEndOf="@id/run"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="3112"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
 
         <ImageButton
-            android:layout_marginTop="@dimen/_20sdp"
-            android:padding="@dimen/_8sdp"
-            android:background="@drawable/style110"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:id="@+id/fire"
-            android:layout_below="@id/run"
-            android:scaleType="centerInside"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/fireprofile"/>
+            android:layout_below="@id/run"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/style110"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fireprofile" />
 
         <TextView
-            android:paddingLeft="@dimen/_10sdp"
-            android:layout_below="@id/stepsint"
-            android:layout_toEndOf="@id/fire"
-            android:layout_marginTop="@dimen/_22sdp"
-            android:text="Steps"
             android:id="@+id/caleroistv"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stepsint"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:layout_toEndOf="@id/fire"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Steps"
+            android:textColor="@color/black" />
 
         <TextView
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:paddingLeft="@dimen/_10sdp"
-            android:layout_below="@id/caleroistv"
-            android:layout_toEndOf="@id/fire"
-            android:text="112"
-            android:textSize="@dimen/_15ssp"
             android:id="@+id/caloriesint"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caleroistv"
+            android:layout_toEndOf="@id/fire"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="112"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
 
         <TextView
-            android:textColor="@color/black"
-            android:paddingLeft="@dimen/_5sdp"
-            android:layout_below="@id/caleroistv"
-            android:layout_toEndOf="@id/caloriesint"
-            android:text="kpl"
-            android:gravity="bottom"
-            android:textStyle="bold"
-            android:textSize="@dimen/_10ssp"
             android:id="@+id/kcpltv"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/_20sdp"/>
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/caleroistv"
+            android:layout_toEndOf="@id/caloriesint"
+            android:gravity="bottom"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="kpl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
 
 
         <ImageButton
-            android:layout_marginTop="@dimen/_20sdp"
-            android:padding="@dimen/_8sdp"
-            android:background="@drawable/style110"
+            android:layout_marginLeft="@dimen/_10sdp"
             android:id="@+id/timerprofile"
-            android:layout_below="@id/fire"
-            android:scaleType="centerInside"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/timeprofile"/>
+            android:layout_below="@id/fire"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/style110"
+            android:padding="@dimen/_8sdp"
+            android:scaleType="centerInside"
+            android:src="@drawable/timeprofile" />
 
         <TextView
-            android:paddingLeft="@dimen/_10sdp"
-            android:layout_below="@id/caloriesint"
-            android:layout_toEndOf="@id/timerprofile"
-            android:layout_marginTop="@dimen/_25sdp"
-            android:text="Workout"
             android:id="@+id/workouttv"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caloriesint"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_toEndOf="@id/timerprofile"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Workout"
+            android:textColor="@color/black" />
 
 
         <TextView
-            android:paddingLeft="@dimen/_10sdp"
+            android:id="@+id/workouttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@id/workouttv"
             android:layout_toEndOf="@id/timerprofile"
+            android:paddingLeft="@dimen/_10sdp"
             android:text="2h 30m"
-            android:id="@+id/workouttime"
-            android:textSize="@dimen/_15ssp"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/ln1"
+            android:background="@drawable/tab3"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@id/line"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageButton
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/device"
+                android:id="@+id/imgbtn_device"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:text="Device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="end"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/black"
+                android:text="&gt;   "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln2"
+            android:background="@drawable/tab3"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/ln1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <ImageButton
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting"
+                android:id="@+id/imgbtn_setting"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:text="Setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="end"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_20ssp"
+                android:textColor="@color/black"
+                android:text="&gt;   "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln3"
+            android:background="@drawable/tab3"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@id/ln2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <ImageButton
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/imgbtn_help"
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/help" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
     </RelativeLayout>
 </FrameLayout>
