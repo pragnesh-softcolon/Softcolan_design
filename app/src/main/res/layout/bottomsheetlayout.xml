@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="@drawable/dialog_bg"
     android:orientation="vertical">
 
@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Category Name"
-
         android:textColor="@color/black"
         android:textSize="@dimen/_20ssp"
         android:textStyle="bold" />
@@ -39,23 +38,24 @@
         android:textSize="@dimen/_15ssp"
         android:textStyle="bold" />
 
-    <ImageButton
+    <ImageView
         android:layout_marginLeft="@dimen/_10sdp"
         android:id="@+id/imgbtn"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_below="@id/vTitle"
         android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         android:src="@drawable/ic_action_name"
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"/>
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"/>
     <TextView
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_below="@id/vTitle"
         android:id="@+id/tmeTv"
         android:layout_toEndOf="@id/imgbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="@dimen/_13ssp"
         android:textColor="@color/black"
         android:text="  3 min"/>
 
@@ -84,7 +84,7 @@
         android:textSize="@dimen/_15ssp"
         android:textStyle="bold" />
 
-    <ImageButton
+    <ImageView
         android:layout_marginLeft="@dimen/_10sdp"
         android:id="@+id/imgbtn2"
         android:layout_toEndOf="@id/image2"
@@ -92,24 +92,22 @@
         android:layout_below="@id/vTitle2"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_action_name"
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"/>
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"/>
     <TextView
-        android:layout_marginTop="@dimen/_5sdp"
         android:layout_below="@id/vTitle2"
         android:id="@+id/tmeTv2"
         android:layout_toEndOf="@id/imgbtn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="@dimen/_13ssp"
         android:textColor="@color/black"
         android:text="  3 min"/>
 
     <TextView
         android:id="@+id/fdback"
         android:text="Feedback"
-        android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="#444545"
         android:textSize="@dimen/_15ssp"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_100sdp"
@@ -118,7 +116,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_40sdp"
@@ -127,4 +125,75 @@
         android:hint="Write your comment..."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/image2"
+        android:background="#8C8CA1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:orientation="horizontal" />
+
+
+
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15ssp"
+        android:id="@+id/image3"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/workvideo" />
+
+    <TextView
+        android:id="@+id/vTitle3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_toEndOf="@id/image3"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Accusamus et iusto odio"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/imgbtn3"
+        android:layout_toEndOf="@id/image3"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@id/vTitle3"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_action_name"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"/>
+    <TextView
+        android:layout_below="@id/vTitle3"
+        android:id="@+id/tmeTv4"
+        android:layout_toEndOf="@id/imgbtn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13ssp"
+        android:textColor="@color/black"
+        android:text="  3 min"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/image3"
+        android:background="#8C8CA1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:orientation="horizontal" />
 </RelativeLayout>

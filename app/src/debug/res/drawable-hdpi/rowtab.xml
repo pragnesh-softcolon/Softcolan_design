@@ -5,10 +5,10 @@
             android:thickness="10dp"
             android:shape="rectangle">
             <corners
-                android:topRightRadius="@dimen/_50sdp"
-                android:topLeftRadius="@dimen/_50sdp"
-                android:bottomLeftRadius="@dimen/_50sdp"
-                android:bottomRightRadius="@dimen/_50sdp"/>
+                android:topRightRadius="@dimen/_10sdp"
+                android:topLeftRadius="@dimen/_10sdp"
+                android:bottomLeftRadius="@dimen/_10sdp"
+                android:bottomRightRadius="@dimen/_10sdp"/>
             <gradient
                 android:startColor="#C7EBF9"
                 android:endColor="#C7EBF9"
