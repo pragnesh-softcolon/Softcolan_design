@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -21,6 +22,7 @@ public class profile_tab3 extends Fragment {
     View view;
     ImageView img,logout;
     LinearLayout device,setting;
+    TextView gender;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,6 +33,7 @@ public class profile_tab3 extends Fragment {
         device=view.findViewById(R.id.ln1);
         setting=view.findViewById(R.id.ln2);
         logout=view.findViewById(R.id.logout);
+        gender=view.findViewById(R.id.gender);
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,14 +69,29 @@ public class profile_tab3 extends Fragment {
                 d.getWindow().setGravity(Gravity.BOTTOM);
             }
         });
-        if (true)
+
+        String sc1,sc;
+        sc1=gender.getText().toString();
+        sc=sc1.toLowerCase();
+        switch (sc)
         {
-            img.setImageResource(R.drawable.man);
+            case "male" :
+            {
+                img.setImageResource(R.drawable.man);
+                break;
+            }
+            case "female" :
+            {
+                img.setImageResource(R.drawable.female);
+                break;
+            }
+            default:
+            {
+                img.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            }
         }
-        else
-        {
-            img.setImageResource(R.drawable.female);
-        }
+
         return view;
     }
 }
