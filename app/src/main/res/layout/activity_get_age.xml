@@ -79,8 +79,8 @@
                 app:np_selectedTextSize="@dimen/_25ssp"
                 app:np_textColor="#292525"
                 app:np_textSize="@dimen/_15ssp"
-                app:np_wheelItemCount="6"
-                app:np_value="18" />
+                app:np_value="18"
+                app:np_wheelItemCount="6" />
 
             <TextView
                 android:textSize="@dimen/_15ssp"

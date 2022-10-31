@@ -21,6 +21,7 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 public class home extends AppCompatActivity
 {
     BottomNavigationView bnView;
+    Boolean result;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -41,7 +42,6 @@ public class home extends AppCompatActivity
                     case tab1:
                     {
                         loadFrag(new home_tab1(),true);
-
                         break;
                     }
                     case tab2:
@@ -69,16 +69,29 @@ public class home extends AppCompatActivity
     {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
+
         if (flag)
             ft.add(R.id.containar,fragment);
         else
             ft.replace(R.id.containar,fragment);
         ft.commit();
+        result=flag;
     }
 
     @Override
     public void onBackPressed()
     {
-        finish();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        if (!result)
+        {
+            ft.replace(R.id.containar,new home_tab1());
+            bnView.setSelectedItemId(R.id.page_1);
+            ft.commit();
+        }
+        else
+        {
+            finish();
+        }
     }
 }

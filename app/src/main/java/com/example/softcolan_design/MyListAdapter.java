@@ -17,9 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder>
 {
     private MyListData[] listdata;
-
     // RecyclerView recyclerView;
-    public MyListAdapter(MyListData[] listdata) {
+    public MyListAdapter(MyListData[] listdata)
+    {
         this.listdata = listdata;
     }
     @Override
@@ -45,8 +45,7 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
                 d.show();
                 d.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
                 d.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                d.getWindow().getAttributes().windowAnimations=R.anim.slide_out_bottom;
-                d.getWindow().getAttributes().windowAnimations=R.anim.slide_in_top;
+                d.getWindow().getAttributes().windowAnimations=R.style.DialogAnimation;
                 d.getWindow().setGravity(Gravity.BOTTOM);
 //                Toast.makeText(view.getContext(),"click on item: "+myListData.getDescription(),Toast.LENGTH_LONG).show();
             }

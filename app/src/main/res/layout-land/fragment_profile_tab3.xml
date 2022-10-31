@@ -7,15 +7,11 @@
     tools:context=".profile_tab3">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_10sdp"
             android:id="@+id/protv"
             android:layout_width="wrap_content"
@@ -24,14 +20,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/logout"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:src="@drawable/logout"
-            android:layout_alignParentRight="true"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"/>
+
         <TextView
             android:layout_marginLeft="@dimen/_10sdp"
             android:id="@+id/uname"
@@ -67,13 +56,13 @@
             android:layout_toEndOf="@id/caloriesint" />
 
         <ImageView
+            android:layout_marginTop="@dimen/_20sdp"
             android:id="@+id/image_man_female"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_290sdp"
+            android:src="@drawable/man"
             android:layout_below="@id/uname"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_toEndOf="@id/kcpltv"
-            android:src="@drawable/man" />
+            android:layout_toEndOf="@id/kcpltv" />
 
         <LinearLayout
             android:layout_below="@id/image_man_female"
@@ -309,5 +298,4 @@
                 android:layout_height="wrap_content"/>
         </LinearLayout>
     </RelativeLayout>
-    </ScrollView>
 </FrameLayout>

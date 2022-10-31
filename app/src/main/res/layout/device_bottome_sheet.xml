@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_600sdp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/heder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Device"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:layout_below="@id/heder"
+        android:id="@+id/tv2"
+        android:gravity="center"
+        android:text="Pleaes Make sure Your device switch on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_below="@id/tv2"
+        android:id="@+id/tv3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Device Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:background="@drawable/tab3image"
+        android:layout_below="@id/tv3"
+        android:id="@+id/lv_tab_3"
+        android:layout_marginLeft="@dimen/_110sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp">
+
+        <RelativeLayout
+
+            android:id="@+id/inner_layout"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/tab3inner">
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="120\n80"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_30ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_below="@+id/tv5"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:background="@drawable/tab3inner"
+                android:backgroundTint="#7A7272" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_below="@+id/tv5"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/tab3inner"
+                android:backgroundTint="#7A7272" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginLeft="@dimen/_179sdp"
+        android:src="@drawable/group1"
+        android:layout_below="@id/tv3"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"/>
+    <ImageView
+        android:id="@+id/img404"
+        android:layout_marginTop="@dimen/_40ssp"
+        android:layout_marginLeft="@dimen/_160sdp"
+        android:layout_below="@id/lv_tab_3"
+        android:src="@drawable/line"
+        android:scaleType="fitStart"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_120sdp"/>
+
+
+    <android.widget.Button
+        android:id="@+id/btn_signIn"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img404"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="@drawable/buttone_style"
+        android:text="Pair Device" />
+</RelativeLayout>
