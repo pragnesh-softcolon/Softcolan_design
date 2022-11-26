@@ -70,27 +70,27 @@ public class profile_tab3 extends Fragment {
             }
         });
 
-        String sc1,sc;
-        sc1=gender.getText().toString();
-        sc=sc1.toLowerCase();
-        switch (sc)
-        {
-            case "male" :
-            {
-                img.setImageResource(R.drawable.man);
-                break;
-            }
-            case "female" :
-            {
-                img.setImageResource(R.drawable.female);
-                break;
-            }
-            default:
-            {
-                img.setImageResource(R.drawable.ic_launcher_background);
-                break;
-            }
-        }
+//        String sc1,sc;
+//        sc1=gender.getText().toString();
+//        sc=sc1.toLowerCase();
+//        switch (sc)
+//        {
+//            case "male" :
+//            {
+//                img.setImageResource(R.drawable.man);
+//                break;
+//            }
+//            case "female" :
+//            {
+//                img.setImageResource(R.drawable.female);
+//                break;
+//            }
+//            default:
+//            {
+//                img.setImageResource(R.drawable.ic_launcher_background);
+//                break;
+//            }
+//        }
 
         return view;
     }

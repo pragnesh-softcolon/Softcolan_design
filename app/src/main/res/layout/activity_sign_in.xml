@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView
     android:fitsSystemWindows="true"
     android:background="@drawable/gradiant"
@@ -10,7 +9,6 @@
     tools:context=".signIn"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
 <LinearLayout
     android:background="@drawable/gradiant"
     android:layout_width="match_parent"
@@ -18,9 +16,10 @@
     android:orientation="vertical">
 
     <RelativeLayout
-        android:background="@drawable/style2"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_450sdp">
+        android:paddingBottom="@dimen/_50sdp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style2">
 
         <TextView
             android:id="@+id/tv1"
@@ -45,9 +44,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_400sdp"
             android:layout_toEndOf="@id/tv2"
             android:src="@drawable/group11" />
 
@@ -67,8 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/tv3"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_20sdp"
             android:text="SIGN IN"
+            android:layout_marginTop="@dimen/_35sdp"
             android:textColor="@color/black"
             android:textSize="@dimen/_20sdp"
             android:textStyle="bold" />
@@ -79,7 +77,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/signin_tv1"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
             android:text="Please enter your email and password"
             android:textSize="@dimen/_13sdp" />
 
@@ -153,27 +150,27 @@
 
         <android.widget.Button
             android:id="@+id/btn_signIn"
-            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/forget_pass"
-            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
             android:background="@drawable/buttone_style"
-            android:text="SIGN IN" />
+            android:text="SIGN IN"
+            android:textColor="@color/white" />
 
     </RelativeLayout>
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
         <ImageView
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_180sdp"
-            android:layout_marginLeft="@dimen/_120sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/_200sdp"
+            android:scaleType="fitCenter"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_alignParentRight="true"
             android:src="@drawable/group1" />
 
         <TextView
@@ -192,11 +189,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/newMember"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_80sdp"
             android:text="SIGN UP"
             android:textColor="@color/blue"
             android:textSize="@dimen/_22sdp"
             android:textStyle="bold" />
-    </FrameLayout>
-</LinearLayout>
-    </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

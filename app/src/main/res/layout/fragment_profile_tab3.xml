@@ -78,6 +78,7 @@
 
         <ImageView
             android:id="@+id/image_man_female"
+            android:layout_alignParentRight="true"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_290sdp"
             android:layout_below="@id/uname"

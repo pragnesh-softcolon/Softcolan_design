@@ -8,212 +8,217 @@
     android:background="@drawable/gradiant"
     android:fitsSystemWindows="true"
     tools:context=".sign_up">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/gradiant"
-    android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_450sdp"
-        android:background="@drawable/style2">
-
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_75sdp"
-            android:text="HMS"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_25ssp" />
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/tv3"
-            android:layout_toEndOf="@id/tv1"
-            android:gravity="bottom"
-            android:text="همس "
-            android:textColor="@color/black"
-            android:textSize="@dimen/_25ssp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="13dp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_400sdp"
-            android:layout_toEndOf="@id/tv2"
-            android:src="@drawable/group11" />
-
-        <TextView
-            android:id="@+id/tv3"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_23sdp"
-            android:layout_below="@+id/tv1"
-            android:layout_marginLeft="@dimen/_75sdp"
-            android:text="A  W H I S P E R  O F  C A R E"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_9ssp" />
-
-        <TextView
-            android:id="@+id/signup_tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv3"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:text="SIGN UP"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/signup_info_tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/signup_tv1"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:text="New Member Register"
-            android:textSize="@dimen/_13ssp" />
-
-        <TextView
-            android:id="@+id/email_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/signup_info_tv1"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:text="User/Email"
-            android:textSize="@dimen/_13ssp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ed_mail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/email_tv"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:background="@color/editText"
-            android:hint="Email">
-
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/editText"
-                android:maxLines="1"
-                android:textColor="@color/black" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/pass_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ed_mail"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:text="Password"
-            android:textSize="@dimen/_13ssp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ed_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pass_tv"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:hint="Password"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/editText"
-                android:maxLines="1"
-                android:textColor="@color/black" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:id="@+id/conform_pass_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ed_password"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:text="Confirm Password"
-            android:textSize="@dimen/_13ssp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ed_conform_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/conform_pass_tv"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:hint="Confirm Password"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/editText"
-                android:maxLines="1"
-                android:textColor="@color/black" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <android.widget.Button
-            android:textColor="@color/white"
-            android:background="@drawable/buttone_style"
-            android:id="@+id/btn_signUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ed_conform_password"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:text="SIGN UP" />
-
-    </RelativeLayout>
-
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center">
+        android:background="@drawable/gradiant"
+        android:orientation="vertical">
 
-        <ImageView
+        <RelativeLayout
+            android:id="@+id/input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/_120sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginBottom="@dimen/_5sdp"
-            android:src="@drawable/group1" />
-
-        <TextView
-            android:id="@+id/already_member"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:text="Already Register Member"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_16ssp" />
+            android:paddingBottom="@dimen/_40sdp"
+            android:background="@drawable/style2">
 
-        <TextView
-            android:id="@+id/signin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/newMember"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_60sdp"
-            android:text="SIGN IN"
-            android:textColor="@color/blue"
-            android:textSize="@dimen/_22ssp"
-            android:textStyle="bold" />
-    </FrameLayout>
-</LinearLayout>
-    </ScrollView>
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_75sdp"
+                android:text="HMS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv3"
+                android:layout_toEndOf="@id/tv1"
+                android:gravity="bottom"
+                android:text="همس "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/tv3"
+                android:src="@drawable/group11" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/_75sdp"
+                android:text="A  W H I S P E R  O F  C A R E"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_35sdp"
+                android:id="@+id/signup_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="SIGN UP"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signup_info_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_tv1"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="New Member Register"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_info_tv1"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="User/Email"
+                android:textSize="@dimen/_13ssp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_tv"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/editText"
+                android:hint="Email">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editText"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/pass_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_mail"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Password"
+                android:textSize="@dimen/_13ssp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass_tv"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:hint="Password"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editText"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/conform_pass_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_password"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Confirm Password"
+                android:textSize="@dimen/_13ssp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_conform_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conform_pass_tv"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:hint="Confirm Password"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editText"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <android.widget.Button
+                android:textColor="@color/white"
+                android:background="@drawable/buttone_style"
+                android:id="@+id/btn_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/ed_conform_password"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:text="SIGN UP" />
+
+        </RelativeLayout>
+
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:gravity="center">-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@id/signin"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/group1"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/already_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:text="Already Register Member"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:text="SIGN IN"
+                android:textColor="@color/blue"
+                android:layout_below="@id/already_member"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <!--    </FrameLayout>-->
+    </LinearLayout>
+</ScrollView>

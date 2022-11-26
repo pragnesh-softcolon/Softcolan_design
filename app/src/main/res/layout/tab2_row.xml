@@ -15,10 +15,11 @@
             android:orientation="vertical">
 
             <!-- Media -->
-            <ImageView
+            <androidx.constraintlayout.utils.widget.ImageFilterView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_80sdp"
+                app:round="@dimen/_10sdp"
                 android:contentDescription="stark"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/rectangle79" />

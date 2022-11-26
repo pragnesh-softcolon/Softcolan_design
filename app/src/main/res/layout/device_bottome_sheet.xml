@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_600sdp"
+    android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:background="@drawable/dialog_bg"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <TextView
         android:layout_alignParentTop="true"
         android:id="@+id/heder"
@@ -110,15 +115,16 @@
 
 
     <android.widget.Button
-        android:id="@+id/btn_signIn"
+        android:id="@+id/btn_pair"
         android:textStyle="bold"
         android:textSize="@dimen/_15ssp"
         android:textColor="@color/white"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/img404"
         android:layout_marginLeft="@dimen/_70sdp"
-        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_alignParentBottom="true"
         android:background="@drawable/buttone_style"
         android:text="Pair Device" />
+
+    </RelativeLayout>
 </RelativeLayout>
